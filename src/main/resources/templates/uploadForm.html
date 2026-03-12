@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="<http://www.thymeleaf.org>">
+<head><meta charset="UTF-8"><title>커피 이미지 업로드</title></head>
+<body>
+<h1>커피 이미지 업로드</h1>
+<form th:action="@{/v1/coffees/upload}" method="post" enctype="multipart/form-data">
+  <p>커피 이름: <input type="text" name="coffeeName"></p>
+  <p>이미지 파일: <input type="file" name="image"></p>
+  <button type="submit">업로드</button>
+</form>
+</body>
+</html>

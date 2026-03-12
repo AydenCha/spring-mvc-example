@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User-Agent 확인</title>
+</head>
+<body>
+<h1>클라이언트 환경 정보</h1>
+<p><strong>User-Agent:</strong> <span th:text="${userAgent}">[userAgent]</span></p>
+<p><strong>x-custom-message:</strong> <span th:text="${customMessage}">[customMessage]</span></p>
+</body>
+</html>
