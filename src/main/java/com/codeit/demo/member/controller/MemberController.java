@@ -141,7 +141,7 @@ public class MemberController {
      * @param model View로 전달할 데이터
      * @return 회원 등록 결과 화면
      */
-    @PostMapping(value = "/form", consumes = "application/json")
+    @PostMapping("/form")
     public String postMemberForm(MemberPostDto dto,
                                  Model model) {
 
